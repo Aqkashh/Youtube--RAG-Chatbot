@@ -4,6 +4,7 @@ This project is an AI-powered chatbot that answers questions based on the transc
 
 
  Features
+ 
 1. Fetches transcripts from any YouTube video (with captions)
 
 2. Splits transcripts into overlapping chunks for better context
@@ -18,52 +19,64 @@ This project is an AI-powered chatbot that answers questions based on the transc
 
 
 Tech Stack
-Python 3.10+
 
-LangChain (core, community, HuggingFace)
+1. Python 3.10+
 
-Hugging Face Transformers
+2. LangChain (core, community, HuggingFace)
 
-ChromaDB (Vector DB)
+3. Hugging Face Transformers
 
-YoutubeTranscriptApi
+4. ChromaDB (Vector DB)
 
-dotenv
+5. YoutubeTranscriptApi
+
+6. dotenv
 
 
 Setup Instructions
-1. Clone the repository
-git clone https://github.com/Aqkashh/Youtube--RAG-Chatbot
 
-cd youtube-chatbot
+1. Clone the repository
+   
+   git clone https://github.com/Aqkashh/Youtube--RAG-Chatbot
+
 
 2. Create and activate a virtual environment
-python -m venv venv
-venv\Scripts\activate
+   
+    python -m venv venv
+    venv\Scripts\activate
 
-3. Install all dependencies
-pip install -r requirements.txt
-
-4. Add your Hugging Face API key to .env
+4. Install all dependencies
+   
+     pip install -r requirements.txt
+ 
+6. Add your Hugging Face API key to .env
 
 Create a .env file in the app/ directory:
+
 HUGGINGFACEHUB_API_TOKEN=your_huggingface_token_here
 
 
 How to Use
+
 Step 1: Ingest YouTube Transcript and Store in DB
+
 python app/run_ingest_and_split.py
+
 Paste a YouTube URL with subtitles when prompted.
 
 Step 2: Ask Questions Based on That Video
+
 python app/test_rag.py
+
 Type your question and get an answer based on the video transcript.
 
 Notes
+
 Make sure the YouTube video has subtitles (captions) available.
 
 ChromaDB automatically persists vectors in the db/ folder.
 
 License
+
 MIT License — feel free to use and build upon this project!
 
