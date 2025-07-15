@@ -1,4 +1,4 @@
-# YouTube GenAI Chatbot
+# YouTube RAG Chatbot
 
 This project is an AI-powered chatbot that answers questions based on the transcript of any YouTube video, using a RAG (Retrieval-Augmented Generation) pipeline built with LangChain, Hugging Face, and ChromaDB.
 
