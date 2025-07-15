@@ -51,9 +51,9 @@ Setup Instructions
  
 6. Add your Hugging Face API key to .env
 
-Create a .env file in the app/ directory:
+     Create a .env file in the app/ directory:
 
-HUGGINGFACEHUB_API_TOKEN=your_huggingface_token_here
+     HUGGINGFACEHUB_API_TOKEN=your_huggingface_token_here
 
 
 How to Use
