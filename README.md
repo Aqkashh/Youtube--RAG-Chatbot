@@ -76,7 +76,5 @@ Make sure the YouTube video has subtitles (captions) available.
 
 ChromaDB automatically persists vectors in the db/ folder.
 
-License
-
-MIT License — feel free to use and build upon this project!
+*** feel free to use and build upon this project! ***
 
